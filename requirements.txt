@@ -1,0 +1,4 @@
+mathutils
+numpy
+jupyter
+bpy=='3.4.0' # Change to local blender python wheel location

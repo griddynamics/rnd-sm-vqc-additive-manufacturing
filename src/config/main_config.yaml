@@ -1,0 +1,40 @@
+seed: 42 # Seed for generation of anomalies
+file_paths:
+  model_path: "/Meshes/lattice_test4.stl" # Path to stl file from which point clouds will be created
+  texture_path: "/concrete_floor_worn_001_diff_4k.jpg" # Texture config
+input_paths: # configure absolute paths for relevant class generation 
+  root_path: "/Meshes/" 
+  mesh_path_reference: "/reference"
+  mesh_path_anomaly: "/anomaly"
+  point_cloud_path: "/point_cloud_mesh" 
+  renders_path: "/dataset"
+model:
+  num_of_bisect: 10
+  num_generations: 50 
+camera_setting:
+  num_of_cameras: 20
+  radius: 200
+  height: 50
+  lens: 35.0
+light_setting:
+  radius: 20
+  num_lights: 1
+  energy: 3500
+anomaly_settings:
+  sigma_loc: 5
+  sigma_scale: 5
+  strength_loc: 5 
+  strength_scale: 5 
+  influence_radius_loc: 15 
+  influence_radius_scale: 10 
+  pull_prob: 0.8
+pipelines_holders:
+  cameras: None
+  Lights: None
+
+
+
+
+
+
+

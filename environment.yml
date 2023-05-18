@@ -1,0 +1,12 @@
+name: ma-vqc-data-preprocessing
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - bpy=3.4.0
+  - open3d=0.16.1
+  - torch
+  - torchvision
+  - pip
+  - pip:
+    - -r requirements.txt
