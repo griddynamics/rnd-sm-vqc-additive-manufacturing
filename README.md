@@ -12,7 +12,7 @@ conda env create -f environment.yml
 # Data generation
 
 The data generation config file can be found in src/config/main_config.yaml
-Configure desired parameters
+Configure desired parameters.
 To run the data generation script run the following commands
 ```
 conda activate ma-vqc-data-preprocessing
@@ -21,16 +21,16 @@ python src/run.py
 
 2 datasets need to be generated. Be sure to change the save path when generating and changing random seed so
 as not to save over previously generated files and to avoid duplicate generation.
-1 for random forest propensity model and another one for PointNet and RandomForest classifier training.
+One for random forest propensity model and another one for PointNet and RandomForest classifier training.
 
 # Data preprocessing and model trainig
 
-Inside the notebooks folder you can find the relevant preprocessing and training steps
+Inside the notebooks folder you can find the relevant preprocessing and training steps.
 
 ## Contents:
 
 RandomForest.ipynb is used for Random Forest propensity and classifier model as well as 
-per point aggregation function scripts used for Random Forest classifier model
+per point aggregation function scripts used for Random Forest classifier model.
 
 PointNet.ipynb is used to train PointNet using iterative farthest point downsampling as well
 as Random Forest sampling techniques. Random Forest sampled dataset is saved for use in
@@ -44,9 +44,9 @@ to get the PointNet predictions.
 
 The notebooks should be run in the order they were metionned in.
 
-notebooks/model_weights folder will contain all model embeddings
+notebooks/model_weights folder will contain all model embeddings.
 notebooks/data folder contains all data including point dataset, selected samples for Random Forest propensity model,
-mesh training dataset, aggregated datasets and RandomForest sampled datasets
+mesh training dataset, aggregated datasets and RandomForest sampled datasets.
 
 ## License
 ```
