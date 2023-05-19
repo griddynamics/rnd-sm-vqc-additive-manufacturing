@@ -1,7 +1,7 @@
 seed: 42 # Seed for generation of anomalies
 file_paths:
   model_path: "/Meshes/lattice_test4.stl" # Path to stl file from which point clouds will be created
-  texture_path: "/concrete_floor_worn_001_diff_4k.jpg" # Texture config
+  texture_path: "/concrete_floor_worn_001_diff_4k.jpg" # Texture file
 input_paths: # configure absolute paths for relevant class generation 
   root_path: "/Meshes/" 
   mesh_path_reference: "/reference"
@@ -9,8 +9,8 @@ input_paths: # configure absolute paths for relevant class generation
   point_cloud_path: "/point_cloud_mesh" 
   renders_path: "/dataset"
 model:
-  num_of_bisect: 10
-  num_generations: 50 
+  num_of_bisect: 10 # Number of bisects to be generated
+  num_generations: 50 # Number of anomaly and noise variations per mesh including bisects
 camera_setting:
   num_of_cameras: 20
   radius: 200
@@ -29,7 +29,7 @@ anomaly_settings:
   influence_radius_scale: 10 
   pull_prob: 0.8
 pipelines_holders:
-  cameras: None
+  cameras: None 
   Lights: None
 
 

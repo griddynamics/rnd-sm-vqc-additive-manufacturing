@@ -1,14 +1,16 @@
 # Requirements 
 
 
-To install BlenderAPI 
-Download BPY wheel at https://pypi.org/project/bpy/#files for Python3.10 and add 
-local URL to requirements.txt
 
 To install conda environment run
 ```
 conda env create -f environment.yml
 ```
+If running environment creation has issues with bpy (BlenderPythonAPI) installation
+remove this module and run the installation again.
+
+To install BlenderAPI manually download BPY wheel at https://pypi.org/project/bpy/#files for Python3.10.
+
 # Data generation
 
 The data generation config file can be found in src/config/main_config.yaml
@@ -16,6 +18,7 @@ Configure desired parameters.
 To run the data generation script run the following commands
 ```
 conda activate ma-vqc-data-preprocessing
+pip install {PATH_TO_BLENDER_INSTALLATION} # Add this to manually install otherwise skip
 python src/run.py
 ```
 
