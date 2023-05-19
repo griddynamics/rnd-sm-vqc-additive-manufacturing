@@ -16,6 +16,13 @@ This gives us a dataset size of 200 (100 anomalies vs 100 normal meshes).
 For the mesh prediction dataset a total of 4000 meshes were generated. 
 Test split was set to 20%.
 Same configuration was applied for point model dataset in regards to anomaly size.
+The dataset was generated in 4 batches. Each batch contained a different random seed.
+Each batch was generated with the following number of generations
+
+```
+num_of_bisect: 10
+num_generations: 50 
+```
 
 
 #### Default anomaly size
