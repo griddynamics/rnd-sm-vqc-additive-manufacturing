@@ -7,7 +7,7 @@ local URL to requirements.txt
 
 To install conda environment run
 ```
-conda env create -f environment. yml
+conda env create -f environment.yml
 ```
 # Data generation
 
